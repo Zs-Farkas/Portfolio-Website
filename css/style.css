@@ -45,4 +45,19 @@ h4 {
   font-size:
 }
 
+a {
+  color: #F26322;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+
 }
