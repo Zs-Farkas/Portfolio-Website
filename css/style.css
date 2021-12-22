@@ -15,6 +15,12 @@ White color: #FFFFFF
 */
 
 body {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.4;
+}
   font-family: presicav, sans-serif;
   font-style: normal;
   font-weight: 100;
