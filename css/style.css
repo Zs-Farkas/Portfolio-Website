@@ -22,7 +22,10 @@ body {
   line-height: 1.4;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: presicav, sans-serif;
   font-style: normal;
   font-size: 35px;
@@ -42,11 +45,11 @@ h3 {
 }
 
 h4 {
-  font-size:
+  font-size: 16px;
 }
 
 a {
-  color: #F26322;
+  color: #f26322;
   text-decoration: none;
 }
 
@@ -66,7 +69,7 @@ button rukes always at the end of the css document
 
 .button {
   display: inline-block;
-  background-color: #F26322;
+  background-color: #f26322;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
@@ -87,6 +90,18 @@ button rukes always at the end of the css document
 }
 
 .button-contact:hover {
-  background-color: #F26322;
-  color: #ffffff;  
+  background-color: #f26322;
+  color: #ffffff;
+}
+
+.social-icons {
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons img {
+  max-width: 50px;
 }
