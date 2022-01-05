@@ -1,3 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0px 15px;
+  text-transform: uppercase;
+}
+
 body {
   background-color: light-grey;
 }
@@ -18,7 +51,7 @@ body {
   font-family: gill-sans-nova, sans-serif;
   font-weight: normal;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -32,12 +65,24 @@ h4 {
   font-weight: 200;
 }
 
+#hero {
+  background-color: #;
+  padding: 20px 0px;
+  display: inline-block;
+  width: 100%;
+}
+
 h1 {
   font-size: 20px;
 }
 
+#hero h1 {
+  text-align: center;
+  }
+
 h2 {
   font-size: 16px;
+  color: #F26322;
 }
 
 h3 {
@@ -63,8 +108,33 @@ a:focus {
   text-decoration: underline;
 }
 
+/* Layout styling */
+
+.container {
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.row {
+  padding: 25px 0px;
+}
+
+.logo {
+  max-width: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-button {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #F6F6F6;
+}
+
 /*
-button rukes always at the end of the css document
+button rules always at the end of the css document
 */
 
 .button {
@@ -90,6 +160,7 @@ button rukes always at the end of the css document
 }
 
 .button-contact:hover {
+<<<<<<< Updated upstream
   background-color: #f26322;
   color: #ffffff;
 }
@@ -104,4 +175,8 @@ button rukes always at the end of the css document
 
 .social-icons img {
   max-width: 50px;
+=======
+  background-color: #F26322;
+  color: #ffffff;
+>>>>>>> Stashed changes
 }
