@@ -87,6 +87,9 @@ h2 {
 
 h3 {
   font-size: 16px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -110,6 +113,11 @@ a:focus {
 
 /* Layout styling */
 
+.project-description {
+  text-align: left;
+  margin: 0px;
+}
+
 .container {
   padding: 0px 15px;
   text-align: center;
@@ -131,6 +139,32 @@ a:focus {
 
 footer {
   background-color: #F6F6F6;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_header{
+  padding-top: 30px;
+}
+
+.about {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.about-row {
+  padding: 15px;
+}
+
+.my-story {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-h3 {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 13px;
 }
 
 /*
@@ -138,35 +172,36 @@ button rules always at the end of the css document
 */
 
 .button {
-  display: inline-block;
-  background-color: #f26322;
-  color: #ffffff;
+  display: block;
+  text-align: right;
+  color: #F26322;
+  font-family: presicav, sans-serif;
+  font-size: 10px;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+  margin: 10px;
+  text-transform: uppercase;
 }
 
 .button:hover {
-  opacity: 0.8;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .button-contact {
   background-color: transparent;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  font-family: presicav, sans-serif;
+  color: #000000;
 }
 
 .button-contact:hover {
-<<<<<<< Updated upstream
-  background-color: #f26322;
-  color: #ffffff;
+  color: #F26322;
+  text-decoration: underline;
 }
 
 .social-icons {
   list-style: none;
+  padding-left: 0px;
 }
 
 .social-icons li {
@@ -175,8 +210,5 @@ button rules always at the end of the css document
 
 .social-icons img {
   max-width: 50px;
-=======
-  background-color: #F26322;
   color: #ffffff;
->>>>>>> Stashed changes
 }
