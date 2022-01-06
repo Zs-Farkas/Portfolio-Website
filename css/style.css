@@ -4,7 +4,7 @@
 
 header {
   text-align: center;
-  padding: 10px;
+  padding: 0px 15px;
   background-color: #ffffff;
   position: fixed;
   display: inline-block;
@@ -129,8 +129,7 @@ a:focus {
 
 .logo {
   max-width: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .contact-button {
@@ -180,6 +179,8 @@ button rules always at the end of the css document
   font-weight: 400;
   margin: 10px;
   text-transform: uppercase;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
