@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Zsuzsanna Farkas">
-    <title>Portfolio Site of Zsuzsanna Farkas UI Designer</title>
+    <title>Zsuzsanna Farkas UI Designer Munich Germany</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/srr2esw.css">
@@ -11,33 +11,32 @@
   </head>
 
   <body>
-      <header class="">
+      <header class="width-container">
           <div>
-            <img src="img\about\logo.png" alt="Logo Zsuzsanna Farkas" class="logo">
+            <img src="img\about\logo_04.svg" alt="Logo Zsuzsanna Farkas" class="logo">
               <nav>
                 <ul>
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
-                </nav>
-              </div>
+              </nav>
+            </div>
           </header>
 
       <main>
-        <div id="about-section" class="width-container">
+        <div class="width-container">
           <div class="about">
-            <h1>About me</h1>
+            <p>About me</p>
           </div>
             <div class="hero-section">
               <div>
-                <picture>
+                <picture class="col-md-3">
                   <source srcset="img\about\portrait_image@1.jpg" media="(max-width:767px)">
                     <img src="img\about\portrait_image@2.jpg" alt="Zsuzsanna Farkas">
-                  </picture>
+                </picture>
                   <div class="about-row">
-                    <div>
-                      <h2 class="my-story">My Story</h2>
+                    <div class="about-text" class="col-md-5">
                       <p>I am a user interface designer with a decade of experience in desktop publishing. I have been part of a variety of print projects from the beginning to creating print-ready files. In the past I worked at different companies, which taught me how to adapt quickly and successfully to different company cultures and processes. I gradually shifted towards digital design, which finally led me to UI design. What really excites me in this field is that it focuses on real user and merges aesthetic and functionality. My goal is to create valuable and beautiful products.</p>
                       <a href="files/FARKAS_resume.pdf" download target="_blank" class="button">Download my resume</a>
                     </div>
@@ -45,7 +44,7 @@
                       <h2 class="my-story">Skills & Tools</h2>
                       <div>
                         <div class="col-md-6 col-lg-7">
-                          <h3 class="about-h3">Relevant skills</h3>
+                          <p class="about-h3">Relevant skills</p>
                           <ul>
                             <li>Analyze competitors</li>
                             <li>Conduct user research</li>
@@ -59,7 +58,7 @@
                           </ul>
                         </div>
                         <div class="col-md-6 col-lg-5">
-                          <h3 class="about-h3">Tools I use</h3>
+                          <p class="about-h3">Tools I use</p>
                           <ul>
                             <li>Adobe XD</li>
                             <li>Illustrator</li>
@@ -79,8 +78,8 @@
         <footer id="contact" class="col-md-1">
             <div class="container">
               <div id="footer-container">
-                <h2 class="footer_header">Get in touch</h2>
-                <p>I am always open for making new connections. Please get in touch with me. Call: <a href="+4917628197958">+49 17628197958</a> or Skype me at <a href="hello@zsfarkas.me">hello@zsfarkas.me</a>. Prefer sending an email?</p>
+                <h4 class="footer_header">Get in touch</h4>
+                <p class="footer-text">I am always open for making new connections. Please get in touch with me. <br>Call: <a href="+4917628197958">+49 17628197958</a> or Skype me at <a href="hello@zsfarkas.me">hello@zsfarkas.me</a>. Prefer sending an email?</p>
                 <div class="contact-button">
                   <a href="mailto:hello@zsfarkas.me" class="button-contact">Email me</a>
                 </div>
@@ -98,11 +97,12 @@
                     </li>
                   </ul>
                 <div>
-                    <p>Copyright Zsuzsanna Farkas 2021</p>
+                    <p class="copyright">Copyright Zsuzsanna Farkas 2022</p>
                 </div>
               </div>
             </div>
           </div>
         </footer>
-  </body>
-</html>
+        <script src="js/scripts.js"></script>
+    </body>
+  </html>
