@@ -5,10 +5,10 @@
 header {
   text-align: center;
   padding: 0px 15px;
-  background-color: #ffffff;
   position: fixed;
   display: inline-block;
   width: 100%;
+  background-color: #F2F2F2;
 }
 
 main {
@@ -32,7 +32,7 @@ nav > ul > li > a {
 }
 
 body {
-  background-color: light-grey;
+  background-color:
 }
 
 img {
@@ -51,29 +51,31 @@ body {
   font-family: gill-sans-nova, sans-serif;
   font-weight: normal;
   font-weight: 200;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.4;
 }
 
-h1,
 h2,
-h3,
-h4 {
-  font-family: presicav, sans-serif;
+h3 {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-size: 35px;
-  font-weight: 200;
 }
 
 #hero {
-  background-color: #;
+  background-color: #F2F2F2;
   padding: 20px 0px;
   display: inline-block;
   width: 100%;
 }
 
 h1 {
-  font-size: 20px;
+  font-family: presicav, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  padding-top: 100px;
 }
 
 #hero h1 {
@@ -81,28 +83,39 @@ h1 {
   }
 
 h2 {
-  font-size: 16px;
-  color: #F26322;
+  font-size: 1.14em;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 90px 0px 40px 0px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1.14em;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1.14em;
+  font-family: presicav, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #F26322;
+  margin: 30px 30px 10px 30px;
 }
 
 a {
-  color: #f26322;
+  color: #000000;
   text-decoration: none;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 a:hover {
-  color: #000000;
+  color: #f26322;
   text-decoration: underline;
 }
 
@@ -115,7 +128,6 @@ a:focus {
 
 .project-description {
   text-align: left;
-  margin: 0px;
 }
 
 .container {
@@ -128,8 +140,8 @@ a:focus {
 }
 
 .logo {
-  max-width: 40px;
-  margin: 30px;
+  max-width: 35px;
+  margin: 20px 40px;
 }
 
 .contact-button {
@@ -137,7 +149,7 @@ a:focus {
 }
 
 footer {
-  background-color: #F6F6F6;
+  background-color: #F2F2F2;
   margin-top: 30px;
   padding-bottom: 30px;
 }
@@ -146,9 +158,16 @@ footer {
   padding-top: 30px;
 }
 
+.footer-text {
+  padding: 0px 50px 0px 50px;
+}
+
 .about {
   padding: 20px 0px;
   text-align: center;
+  font-family: presicav, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .about-row {
@@ -157,13 +176,44 @@ footer {
 
 .my-story {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .about-h3 {
-  text-transform: uppercase;
   color: #000000;
-  font-size: 13px;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.copyright {
+  font-size: 0.85em;
+  margin-top: 30px;
+}
+
+.hero-text {
+  padding: 50px 50px 0px 50px;
+  margin: 0px 0px 0px 0px;
+}
+
+.see-more {
+  font-size: 0.7em;
+  text-align: center;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;:
+  max-width: 30px;
+  margin: 20px 0px 10px 0px;
+}
+
+.see-more img {
+  max-width: 30px;
+}
+
+.about-text{
 }
 
 /*
@@ -173,7 +223,7 @@ button rules always at the end of the css document
 .button {
   display: block;
   text-align: right;
-  color: #F26322;
+  color: #000000;
   font-family: presicav, sans-serif;
   font-size: 10px;
   font-weight: 400;
@@ -184,15 +234,15 @@ button rules always at the end of the css document
 }
 
 .button:hover {
-  color: #000000;
+  color: #F26322;
   text-decoration: underline;
 }
 
 .button-contact {
   background-color: transparent;
-  text-transform: uppercase;
   font-family: presicav, sans-serif;
   color: #000000;
+  font-size: 0.85em;
 }
 
 .button-contact:hover {
@@ -210,50 +260,11 @@ button rules always at the end of the css document
 }
 
 .social-icons img {
-  max-width: 50px;
+  max-width: 25px;
   color: #ffffff;
 }
 
-.berlin-illustration {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -274,10 +285,19 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
+  h2 {
+    text-align: left;
+  }
+
+  .see-more {
+    font-size: 16px;
+  }
+
 
   .button {
     text-align: left;
     margin-left: unset;
+    font-size: 14px;
   }
 
   .col-md-6 {
@@ -289,6 +309,14 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-5 {
+    width: 41%;
+  }
+
   .row::after {
     content: "";
     clear: both;
@@ -297,6 +325,10 @@ Medium devices (640px and larger)
 
   .col-md-1 {
     width: 100%;
+  }
+
+  .social-icons img {
+    max-width: 35px;
   }
 
 }
@@ -315,9 +347,9 @@ Large devices (1024px or larger)
   }
 
   .width-container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 }
