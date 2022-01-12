@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Zsuzsanna Farkas">
     <title>Zsuzsanna Farkas UI Designer Munich Germany</title>
+    <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/srr2esw.css">
@@ -11,18 +12,21 @@
   </head>
 
   <body>
-      <header class="width-container">
-          <div>
-            <img src="img\about\logo_04.svg" alt="Logo Zsuzsanna Farkas" class="logo">
-              <nav>
-                <ul>
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
+    <header class="navigation">
+      <div>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="img/about/logo_04.svg" alt="Logo Zsuzsanna Farkas" class="logo">
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
 
       <main>
           <div id="hero">
@@ -30,7 +34,7 @@
               <h1>Hello<br>&</br>Welcome!</h1>
             </div>
             <div class="container" class="width-container">
-              <p class="hero-text">My name is Zsuzsanna Farkas and I am a user interface designer based in Munich, Germany. I am passionate about UI for its human-centered approach of mixing aesthetic and functionality. Currently I am looking for a full-time job opportunity in Munich.</p>
+              <p class="hero-text">My name is Zsuzsanna Farkas and I am a user interface designer based in Munich, Germany. I am passionate about UI for its human-centered approach of mixing aesthetic and functionality. <br>Currently I am looking for a full-time job opportunity in Munich.</p>
             </div>
             <div class="see-more">
               <p>See my works</p>
@@ -42,12 +46,12 @@
 
           <div id="work">
             <div class="container" class="width-container">
-              <h2>My recent projects</h2>
+              <h2 class="recent-projects">My recent projects</h2>
               <div class="row">
                 <div class="col-md-6" class="col-lg-7">
                   <picture>
-                    <source srcset="img\homepage\cover_images\paper_society_cover_image@1.png" media="(max-width:767px)">
-                    <img src="img\homepage\cover_images\paper_society_cover_image@2.png" alt="Paper Society">
+                    <source srcset="img/homepage/cover_images/paper_society@1.jpg" media="(max-width:767px)">
+                    <img src="img/homepage/cover_images/paper_society@2.jpg" alt="Paper Society">
                   </picture>
                 </div>
                 <div class="col-md-6" class="col-lg-5">
@@ -60,14 +64,14 @@
               <div class="row">
                 <div class="col-md-6" class="col-lg-7">
                   <picture>
-                    <source srcset="img\homepage\cover_images\wilderness_cover_image@1.png" media="(max-width:767px)">
-                    <img src="img\homepage\cover_images\wilderness_cover_image@2.png" alt="Wilderness">
+                    <source srcset="img/homepage/cover_images/wilderness_cover_image@1.png" media="(max-width:767px)">
+                    <img src="img/homepage/cover_images/wilderness_cover_image@2.png" alt="Wilderness">
                   </picture>
                 </div>
                 <div class="col-md-6" class="col-lg-5">
                   <h3>Wilderness</h3>
                   <p class="project-description">Native app concept for searching and sharing hiking routes in your area</p>
-                  <a href="#" class="button">Read more</a>
+                  <a href="wilderness.html" class="button">Read more</a>
                 </div>
               </div>
               </div>
@@ -103,6 +107,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
   </body>
 </html>
