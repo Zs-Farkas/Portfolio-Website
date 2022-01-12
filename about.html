@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Zsuzsanna Farkas">
     <title>Zsuzsanna Farkas UI Designer Munich Germany</title>
+    <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/srr2esw.css">
@@ -11,39 +12,42 @@
   </head>
 
   <body>
-      <header class="width-container">
-          <div>
-            <img src="img\about\logo_04.svg" alt="Logo Zsuzsanna Farkas" class="logo">
-              <nav>
-                <ul>
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
+    <header class="navigation">
+      <div>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="img/about/logo_04.svg" alt="Logo Zsuzsanna Farkas" class="logo">
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
 
       <main>
-        <div class="width-container">
+        <div class="about-text-section">
           <div class="about">
-            <p>About me</p>
+            <h2>About me</h2>
           </div>
             <div class="hero-section">
               <div>
-                <picture class="col-md-3">
-                  <source srcset="img\about\portrait_image@1.jpg" media="(max-width:767px)">
-                    <img src="img\about\portrait_image@2.jpg" alt="Zsuzsanna Farkas">
+                <picture class="col-md-4 profile-image">
+                  <source srcset="img/about/portrait_image@1.jpg" media="(max-width:767px)">
+                    <img src="img/about/portrait_image@2.jpg" alt="Zsuzsanna Farkas">
                 </picture>
                   <div class="about-row">
-                    <div class="about-text" class="col-md-5">
-                      <p>I am a user interface designer with a decade of experience in desktop publishing. I have been part of a variety of print projects from the beginning to creating print-ready files. In the past I worked at different companies, which taught me how to adapt quickly and successfully to different company cultures and processes. I gradually shifted towards digital design, which finally led me to UI design. What really excites me in this field is that it focuses on real user and merges aesthetic and functionality. My goal is to create valuable and beautiful products.</p>
+                    <div class="about-text" class="col-md-8">
+                      <p class="intro">I am a user interface designer with a decade of experience in desktop publishing. I have been part of a variety of print projects from the beginning to creating print-ready files. In the past I worked at different companies, which taught me how to adapt quickly and successfully to different company cultures and processes. I gradually shifted towards digital design, which finally led me to UI design. What really excites me in this field is that it focuses on real user and merges aesthetic and functionality. My goal is to create valuable and beautiful products.</p>
                       <a href="files/FARKAS_resume.pdf" download target="_blank" class="button">Download my resume</a>
                     </div>
-                    <div>
-                      <h2 class="my-story">Skills & Tools</h2>
+                    <div class="col-md-1">
+                      <h2 class="my-story" class="col-md-1">Skills & Tools</h2>
                       <div>
-                        <div class="col-md-6 col-lg-7">
+                        <div class="col-md-6 col-lg-6 relevant-skills">
                           <p class="about-h3">Relevant skills</p>
                           <ul>
                             <li>Analyze competitors</li>
@@ -57,7 +61,7 @@
                             <li>Design user interfaces for all breakpoints</li>
                           </ul>
                         </div>
-                        <div class="col-md-6 col-lg-5">
+                        <div class="col-md-6 col-lg-6">
                           <p class="about-h3">Tools I use</p>
                           <ul>
                             <li>Adobe XD</li>
@@ -97,12 +101,13 @@
                     </li>
                   </ul>
                 <div>
-                    <p class="copyright">Copyright Zsuzsanna Farkas 2022</p>
+                  <p class="copyright">Copyright Zsuzsanna Farkas 2022</p>
                 </div>
               </div>
             </div>
           </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
   </html>
