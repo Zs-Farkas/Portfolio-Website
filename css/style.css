@@ -3,7 +3,6 @@
 }
 
 header {
-  text-align: center;
   padding: 0px 15px;
   position: fixed;
   display: inline-block;
@@ -22,17 +21,9 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
-
 nav > ul > li > a {
   padding: 0px 15px;
   text-transform: uppercase;
-}
-
-body {
-  background-color:
 }
 
 img {
@@ -56,13 +47,6 @@ body {
   line-height: 1.4;
 }
 
-h2,
-h3 {
-  font-family: gill-sans-nova, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 #hero {
   background-color: #F2F2F2;
   padding: 20px 0px;
@@ -83,13 +67,19 @@ h1 {
   }
 
 h2 {
-  font-size: 1.14em;
+  font-family: presicav, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
   color: #000000;
   text-transform: uppercase;
   margin: 90px 0px 40px 0px;
 }
 
 h3 {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.14em;
   text-align: left;
   margin-top: 20px;
@@ -125,6 +115,10 @@ a:focus {
 }
 
 /* Layout styling */
+
+.about-text-section {
+  margin: 15px;
+}
 
 .project-description {
   text-align: left;
@@ -163,20 +157,16 @@ footer {
 }
 
 .about {
-  padding: 20px 0px;
+  padding: 50px 0px 30px 0px;
   text-align: center;
   font-family: presicav, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.about-row {
-  padding: 15px;
-}
-
 .my-story {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .about-h3 {
@@ -195,6 +185,7 @@ footer {
 .hero-text {
   padding: 50px 50px 0px 50px;
   margin: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 .see-more {
@@ -213,7 +204,68 @@ footer {
   max-width: 30px;
 }
 
-.about-text{
+.about-text {
+}
+
+.navigation {
+  padding-bottom: 50px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle li .icon {
+  padding-top: 25px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.paper-society {
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paper-society img {
+  max-width: 1000px;
+  text-align: center;
+}
+
+#work img{
+    max-width: 600px;
+}
+
+.h3-wilderness {
+  text-align: center;
 }
 
 /*
@@ -227,7 +279,7 @@ button rules always at the end of the css document
   font-family: presicav, sans-serif;
   font-size: 10px;
   font-weight: 400;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   text-transform: uppercase;
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -265,14 +317,13 @@ button rules always at the end of the css document
 }
 
 
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-      text-align: unset;
-      padding: 20px 0 13px;
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
   nav {
@@ -286,13 +337,12 @@ Medium devices (640px and larger)
   }
 
   h2 {
-    text-align: left;
+    text-align: center;
   }
 
   .see-more {
     font-size: 16px;
   }
-
 
   .button {
     text-align: left;
@@ -309,12 +359,12 @@ Medium devices (640px and larger)
     padding: 10px;
   }
 
-  .col-md-3 {
-    width: 25%;
+  .col-md-4 {
+    width: 33%;
   }
 
-  .col-md-5 {
-    width: 41%;
+  .col-md-8 {
+    width: 66%;
   }
 
   .row::after {
@@ -327,8 +377,50 @@ Medium devices (640px and larger)
     width: 100%;
   }
 
+  .col-md-3 {
+    width: 33%;
+  }
+
   .social-icons img {
     max-width: 35px;
+  }
+
+  .hero-text {
+    padding: 50px 150px 0px 150px;
+  }
+
+  .navigation {
+    padding: 100px 100px 0px 100px;
+  }
+
+  .my-story {
+    margin-top: 30px;
+  }
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  .about-text-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .profile-image {
+    max-width: 400px;
   }
 
 }
@@ -338,19 +430,27 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-  .col-lg-7 {
-    width: 58%;
-  }
-
   .col-lg-5 {
     width: 41%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58%;
   }
 
   .width-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
+  }
+
+  .intro {
+    margin-top: 0px;
+  }
 
 }
 
