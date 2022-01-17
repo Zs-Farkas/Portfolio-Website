@@ -33,7 +33,7 @@ img {
 /*
 Used colors
 Primary color grey:#414042
-Accent color orange:#F26322
+Accent color orange:#D0490C
 Beige color: #D9BB8A
 White color: #FFFFFF
 */
@@ -92,7 +92,7 @@ h4 {
   font-family: presicav, sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #F26322;
+  color: #D0490C;
   margin: 30px 30px 10px 30px;
 }
 
@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-  color: #f26322;
+  color: #D0490C;
   text-decoration: underline;
 }
 
@@ -195,9 +195,7 @@ footer {
   font-weight: 300;
   font-style: italic;
   text-decoration: underline;
-  text-transform: uppercase;:
-  max-width: 30px;
-  margin: 20px 0px 10px 0px;
+  text-transform: uppercase;
 }
 
 .see-more img {
@@ -286,7 +284,7 @@ button rules always at the end of the css document
 }
 
 .button:hover {
-  color: #F26322;
+  color: #D0490C;
   text-decoration: underline;
 }
 
@@ -298,7 +296,7 @@ button rules always at the end of the css document
 }
 
 .button-contact:hover {
-  color: #F26322;
+  color: #D0490C;
   text-decoration: underline;
 }
 
@@ -389,7 +387,7 @@ Medium devices (640px and larger)
     padding: 50px 150px 0px 150px;
   }
 
-  .navigation {
+  .navigation { 
     padding: 100px 100px 0px 100px;
   }
 
